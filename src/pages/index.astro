@@ -1,0 +1,55 @@
+---
+import Nav from "../components/Nav.astro";
+import Music from "../components/Music.astro"
+import Topbar from "../components/Topbar.astro";
+import Footer from "../components/Footer.astro";
+import Mainlayout from "../layouts/Mainlayout.astro";
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content={Astro.generator}/>
+    <title>Spotify</title>
+</head>
+<body>
+
+    <main>
+        <Topbar/>
+        <main class="maingrid">
+            <div class="grid-item1">
+                <Nav/>
+            </div>
+            <div class="music-container">
+                <Music/>
+                <Music/>
+                <Music/>
+            </div>
+            </div>
+        </main>
+    </main>
+</body>
+
+<Footer/>
+
+</html>
+
+<style>
+
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem; 
+    background-color: #111111;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+</style>

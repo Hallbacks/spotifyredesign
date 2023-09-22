@@ -1,0 +1,65 @@
+<div class="grid-container">
+    <div class="card">
+        <img src="../public/image.png" alt="Image 1">
+        <h4>Title 1</h4>
+        <p>Description 1</p>
+    </div>
+    <div class="card">
+        <img src="../public/image.png" alt="Image 2">
+        <h4>Title 2</h4>
+        <p>Description 2</p>
+    </div>
+    <div class="card">
+        <img src="../public/image.png" alt="Image 3">
+        <h4>Title 3</h4>
+        <p>Description 3</p>
+    </div>
+    <div class="card">
+        <img src="../public/image.png" alt="Image 4">
+        <h4>Title 4</h4>
+        <p>Description 4</p>
+    </div>
+    <div class="card">
+        <img src="../public/image.png" alt="Image 5">
+        <h4>Title 5</h4>
+        <p>Description 5</p>
+    </div>
+    <div class="card">
+        <img src="../public/image.png" alt="Image 6">
+        <h4>Title 6</h4>
+        <p>Description 6</p>
+    </div>
+</div>
+
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.card {
+    background-color: #181818;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 130%;
+}
+
+.card img {
+    height: auto;
+    width: 150px;
+}
+
+
+h4 {
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+}
+</style>
